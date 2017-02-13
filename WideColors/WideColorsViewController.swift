@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WideColorsViewController: UIViewController {
 
-  @IBOutlet weak var coreGraphicsView: UIView!
   @IBOutlet weak var referenceImage: UIImageView!
+  @IBOutlet weak var coreGraphicsView: UIView!
+  @IBOutlet weak var openglView: UIView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    let img = self.referenceImage.image
+    
   }
 
   override func didReceiveMemoryWarning() {
