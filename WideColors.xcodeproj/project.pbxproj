@@ -14,6 +14,7 @@
 		D09CEE2F1E502F9E00328FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CEE2D1E502F9E00328FAD /* LaunchScreen.storyboard */; };
 		D09CEE381E50301400328FAD /* insta-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D09CEE371E50301400328FAD /* insta-logo.png */; };
 		D09CEE3A1E50315300328FAD /* OpenGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CEE391E50315300328FAD /* OpenGL.swift */; };
+		D09CEE3C1E512FF300328FAD /* CoreGraphicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CEE3B1E512FF300328FAD /* CoreGraphicsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D09CEE301E502F9E00328FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09CEE371E50301400328FAD /* insta-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insta-logo.png"; sourceTree = "<group>"; };
 		D09CEE391E50315300328FAD /* OpenGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenGL.swift; sourceTree = "<group>"; };
+		D09CEE3B1E512FF300328FAD /* CoreGraphicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D09CEE2B1E502F9E00328FAD /* Assets.xcassets */,
 				D09CEE2D1E502F9E00328FAD /* LaunchScreen.storyboard */,
 				D09CEE301E502F9E00328FAD /* Info.plist */,
+				D09CEE3B1E512FF300328FAD /* CoreGraphicsView.swift */,
 			);
 			path = WideColors;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				D09CEE271E502F9E00328FAD /* WideColorsViewController.swift in Sources */,
 				D09CEE3A1E50315300328FAD /* OpenGL.swift in Sources */,
+				D09CEE3C1E512FF300328FAD /* CoreGraphicsView.swift in Sources */,
 				D09CEE251E502F9E00328FAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
