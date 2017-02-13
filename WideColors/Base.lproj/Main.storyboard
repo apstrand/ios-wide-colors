@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" restorationIdentifier="coregraphics_view" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-v5-RZt" customClass="CoreGraphicsView" customModule="WideColors" customModuleProvider="target">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="coregraphics_view" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-v5-RZt" customClass="CoreGraphicsView" customModule="WideColors" customModuleProvider="target">
                                 <rect key="frame" x="175" y="50" width="150" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -34,21 +34,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoreGraphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-Gr-Q8I">
-                                <rect key="frame" x="198" y="28" width="106" height="21"/>
+                                <rect key="frame" x="197" y="28" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" restorationIdentifier="ref_view" image="insta-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-BN-xuu">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ref_view" image="colors-p3.png" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-BN-xuu">
                                 <rect key="frame" x="16" y="50" width="150" height="200"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="opengl_view" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-pv-seg">
+                            <glkView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="opengl_view" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-pv-seg">
                                 <rect key="frame" x="16" y="314" width="150" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </glkView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenGL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3c-bj-DNV">
-                                <rect key="frame" x="59.5" y="293" width="64" height="21"/>
+                                <rect key="frame" x="59" y="293" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jko-XS-HsM">
+                                <rect key="frame" x="175" y="314" width="150" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF4-U2-PCa">
+                                <rect key="frame" x="229" y="293" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,15 +67,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ye3-BN-xuu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="3LJ-D2-cM8"/>
+                            <constraint firstItem="Jko-XS-HsM" firstAttribute="width" secondItem="ye3-BN-xuu" secondAttribute="width" id="Aef-fa-R6R"/>
+                            <constraint firstItem="Jko-XS-HsM" firstAttribute="height" secondItem="ye3-BN-xuu" secondAttribute="height" id="D9b-pr-lOc"/>
                             <constraint firstItem="cyh-v5-RZt" firstAttribute="leading" secondItem="ye3-BN-xuu" secondAttribute="trailing" constant="9" id="FAw-Dr-wb0"/>
                             <constraint firstItem="pBb-pv-seg" firstAttribute="height" secondItem="ye3-BN-xuu" secondAttribute="height" id="IsX-CX-eRh"/>
                             <constraint firstItem="ye3-BN-xuu" firstAttribute="top" secondItem="ByL-An-4iE" secondAttribute="bottom" constant="1" id="IuM-W0-IFS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ye3-BN-xuu" secondAttribute="leading" id="K5m-8e-lBy"/>
+                            <constraint firstItem="qF4-U2-PCa" firstAttribute="centerX" secondItem="Jko-XS-HsM" secondAttribute="centerX" id="RPF-VB-cfh"/>
                             <constraint firstItem="cyh-v5-RZt" firstAttribute="height" secondItem="ye3-BN-xuu" secondAttribute="height" id="ZPe-6r-ZJL"/>
                             <constraint firstItem="ByL-An-4iE" firstAttribute="centerX" secondItem="ye3-BN-xuu" secondAttribute="centerX" constant="1" id="b8V-x3-n9G"/>
                             <constraint firstItem="cyh-v5-RZt" firstAttribute="width" secondItem="ye3-BN-xuu" secondAttribute="width" id="cjC-Hi-1hc"/>
                             <constraint firstItem="b3c-bj-DNV" firstAttribute="centerX" secondItem="pBb-pv-seg" secondAttribute="centerX" id="f6r-hA-bXS"/>
+                            <constraint firstItem="qF4-U2-PCa" firstAttribute="baseline" secondItem="b3c-bj-DNV" secondAttribute="baseline" id="hDU-Cl-KVV"/>
                             <constraint firstItem="ye3-BN-xuu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="i2Q-1c-fH1"/>
+                            <constraint firstItem="Jko-XS-HsM" firstAttribute="leading" secondItem="cyh-v5-RZt" secondAttribute="leading" id="kya-bj-WsU"/>
+                            <constraint firstItem="Jko-XS-HsM" firstAttribute="top" secondItem="pBb-pv-seg" secondAttribute="top" id="sDQ-Pm-vgo"/>
                             <constraint firstItem="DtS-Gr-Q8I" firstAttribute="baseline" secondItem="ByL-An-4iE" secondAttribute="baseline" id="tGx-Yt-E5r"/>
                             <constraint firstItem="pBb-pv-seg" firstAttribute="top" secondItem="ye3-BN-xuu" secondAttribute="bottom" constant="64" id="tz1-Kx-6pR"/>
                             <constraint firstItem="ye3-BN-xuu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="u8m-P4-1vL"/>
@@ -78,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="coreGraphicsView" destination="cyh-v5-RZt" id="ymW-LE-cuz"/>
+                        <outlet property="metalView" destination="Jko-XS-HsM" id="flO-BH-u4a"/>
                         <outlet property="openglView" destination="pBb-pv-seg" id="P3V-pB-IRn"/>
                         <outlet property="referenceImage" destination="ye3-BN-xuu" id="GLg-QU-o7T"/>
                     </connections>
@@ -88,6 +105,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="insta-logo.png" width="640" height="640"/>
+        <image name="colors-p3.png" width="10" height="20"/>
     </resources>
 </document>

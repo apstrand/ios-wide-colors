@@ -7,19 +7,38 @@
 //
 
 import UIKit
+import GLKit
 
 class WideColorsViewController: UIViewController {
 
   @IBOutlet weak var referenceImage: UIImageView!
   @IBOutlet weak var coreGraphicsView: CoreGraphicsView!
-  @IBOutlet weak var openglView: UIView!
+  @IBOutlet weak var glkView: GLKView!
+  @IBOutlet weak var metalView: UIView!
+  
+  var metal: Metal!
+  var opengl: OpenGL!
 
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     
-    let img = self.referenceImage.image
-    coreGraphicsView.image = img?.cgImage
+    metal = Metal(metalView)
+    opengl = OpenGL()
+
+    self.referenceImage.layer.magnificationFilter = kCAFilterNearest
+    if let image = self.referenceImage.image?.cgImage {
+      coreGraphicsView.image = image
+      opengl.setup(glkView, image: image)
+    }
     
   }
 
