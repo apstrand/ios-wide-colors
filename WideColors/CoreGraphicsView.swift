@@ -11,6 +11,15 @@ import UIKit
 
 class CoreGraphicsView: UIView {
   
+  var image: CGImage?
   
+  override func draw(_ rect: CGRect) {
+    let ctx = UIGraphicsGetCurrentContext()
+    
+    if let img = self.image {
+      ctx?.draw(img, in: rect)
+    }
+    
+  }
   
 }

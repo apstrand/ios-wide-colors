@@ -11,7 +11,7 @@ import UIKit
 class WideColorsViewController: UIViewController {
 
   @IBOutlet weak var referenceImage: UIImageView!
-  @IBOutlet weak var coreGraphicsView: UIView!
+  @IBOutlet weak var coreGraphicsView: CoreGraphicsView!
   @IBOutlet weak var openglView: UIView!
 
   override func viewDidLoad() {
@@ -19,6 +19,7 @@ class WideColorsViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     
     let img = self.referenceImage.image
+    coreGraphicsView.image = img?.cgImage
     
   }
 

@@ -63,12 +63,12 @@
 				D09CEE361E50301400328FAD /* assets */,
 				D09CEE241E502F9E00328FAD /* AppDelegate.swift */,
 				D09CEE261E502F9E00328FAD /* WideColorsViewController.swift */,
+				D09CEE3B1E512FF300328FAD /* CoreGraphicsView.swift */,
 				D09CEE391E50315300328FAD /* OpenGL.swift */,
 				D09CEE281E502F9E00328FAD /* Main.storyboard */,
 				D09CEE2B1E502F9E00328FAD /* Assets.xcassets */,
 				D09CEE2D1E502F9E00328FAD /* LaunchScreen.storyboard */,
 				D09CEE301E502F9E00328FAD /* Info.plist */,
-				D09CEE3B1E512FF300328FAD /* CoreGraphicsView.swift */,
 			);
 			path = WideColors;
 			sourceTree = "<group>";
