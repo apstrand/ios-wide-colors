@@ -30,6 +30,8 @@ class CoreGraphicsView: UIView {
       ctx.fill(drawRect)
       return
     }
+    
+    ctx.interpolationQuality = CGInterpolationQuality.none
 
     let imgRect = CGRect(origin: CGPoint.zero, size: CGSize(width: img.width, height: img.height))
     
