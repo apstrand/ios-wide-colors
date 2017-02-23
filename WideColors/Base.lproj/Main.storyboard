@@ -94,8 +94,8 @@
                     </view>
                     <connections>
                         <outlet property="coreGraphicsView" destination="cyh-v5-RZt" id="ymW-LE-cuz"/>
+                        <outlet property="glkView" destination="pBb-pv-seg" id="jKu-A7-YaQ"/>
                         <outlet property="metalView" destination="Jko-XS-HsM" id="flO-BH-u4a"/>
-                        <outlet property="openglView" destination="pBb-pv-seg" id="P3V-pB-IRn"/>
                         <outlet property="referenceImage" destination="ye3-BN-xuu" id="GLg-QU-o7T"/>
                     </connections>
                 </viewController>
