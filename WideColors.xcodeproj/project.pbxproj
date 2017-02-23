@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D096EA471E5F430200C573A1 /* Shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = D096EA441E5F430200C573A1 /* Shader.frag */; };
+		D096EA481E5F430200C573A1 /* Shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = D096EA451E5F430200C573A1 /* Shader.vert */; };
 		D09CEE251E502F9E00328FAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CEE241E502F9E00328FAD /* AppDelegate.swift */; };
 		D09CEE271E502F9E00328FAD /* WideColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CEE261E502F9E00328FAD /* WideColorsViewController.swift */; };
 		D09CEE2A1E502F9E00328FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CEE281E502F9E00328FAD /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D096EA441E5F430200C573A1 /* Shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.frag; sourceTree = "<group>"; };
+		D096EA451E5F430200C573A1 /* Shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vert; sourceTree = "<group>"; };
 		D09CEE211E502F9E00328FAD /* WideColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WideColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CEE241E502F9E00328FAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09CEE261E502F9E00328FAD /* WideColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideColorsViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D096EA461E5F430200C573A1 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D096EA451E5F430200C573A1 /* Shader.vert */,
+				D096EA441E5F430200C573A1 /* Shader.frag */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		D096EA491E5F438F00C573A1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D0A183491E576FFF001776A9 /* colors-default.png */,
+				D0A1834A1E576FFF001776A9 /* colors-p3.png */,
+				D0A1834B1E576FFF001776A9 /* colors-srgb.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		D09CEE181E502F9E00328FAD = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +108,8 @@
 		D09CEE361E50301400328FAD /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				D0A183491E576FFF001776A9 /* colors-default.png */,
-				D0A1834A1E576FFF001776A9 /* colors-p3.png */,
-				D0A1834B1E576FFF001776A9 /* colors-srgb.png */,
+				D096EA491E5F438F00C573A1 /* images */,
+				D096EA461E5F430200C573A1 /* shaders */,
 				D09CEE371E50301400328FAD /* insta-logo.png */,
 			);
 			path = assets;
@@ -153,10 +175,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D096EA471E5F430200C573A1 /* Shader.frag in Resources */,
 				D09CEE2F1E502F9E00328FAD /* LaunchScreen.storyboard in Resources */,
 				D09CEE2C1E502F9E00328FAD /* Assets.xcassets in Resources */,
 				D0A1834E1E576FFF001776A9 /* colors-srgb.png in Resources */,
 				D0A1834C1E576FFF001776A9 /* colors-default.png in Resources */,
+				D096EA481E5F430200C573A1 /* Shader.vert in Resources */,
 				D09CEE381E50301400328FAD /* insta-logo.png in Resources */,
 				D0A1834D1E576FFF001776A9 /* colors-p3.png in Resources */,
 				D09CEE2A1E502F9E00328FAD /* Main.storyboard in Resources */,
